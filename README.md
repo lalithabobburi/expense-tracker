@@ -114,6 +114,9 @@ date        - Transaction date (required)
 createdAt   - Auto timestamp
 updatedAt   - Auto timestamp
 ```
+## 👤 Author
+
+- **Name:** Lalitha Bobburi
 
 ## 📄 License
 
