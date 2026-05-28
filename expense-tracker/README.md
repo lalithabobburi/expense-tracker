@@ -113,7 +113,9 @@ category    - Food | Rent | Salary | etc.
 date        - Transaction date (required)
 createdAt   - Auto timestamp
 updatedAt   - Auto timestamp
-```go
+```
+
+---
 ## 📄 License
 
 MIT License
