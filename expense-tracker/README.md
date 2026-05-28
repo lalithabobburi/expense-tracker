@@ -113,17 +113,7 @@ category    - Food | Rent | Salary | etc.
 date        - Transaction date (required)
 createdAt   - Auto timestamp
 updatedAt   - Auto timestamp
-```
-
----
-
-## 👤 Author
-
-- **Name:** Lalitha Bobburi
-- **Role:** Java/Support Apprentice
-
----
-
+```go
 ## 📄 License
 
 MIT License
