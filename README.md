@@ -115,15 +115,6 @@ createdAt   - Auto timestamp
 updatedAt   - Auto timestamp
 ```
 
----
-
-## 👤 Author
-
-- **Name:** Lalitha Bobburi
-- **Role:** Java/Support Apprentice
-
----
-
 ## 📄 License
 
 MIT License
