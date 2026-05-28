@@ -1,0 +1,26 @@
+# Java
+target/
+*.class
+*.jar
+*.db
+
+# Node
+node_modules/
+dist/
+.angular/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+*.egg-info/
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db

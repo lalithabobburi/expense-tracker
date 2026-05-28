@@ -1,0 +1,23 @@
+<div class="transaction-list">
+  <h2>All Transactions</h2>
+  <a routerLink="/add" class="btn-add">+ Add New</a>
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th><th>Category</th><th>Type</th><th>Amount</th><th>Date</th><th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let t of transactions" [class]="t.type.toLowerCase()">
+        <td>{{ t.title }}</td>
+        <td>{{ t.category }}</td>
+        <td><span class="badge" [class]="t.type.toLowerCase()">{{ t.type }}</span></td>
+        <td>₹{{ t.amount | number:'1.2-2' }}</td>
+        <td>{{ t.date }}</td>
+        <td>
+          <button (click)="delete(t.id!)" class="btn-delete">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
