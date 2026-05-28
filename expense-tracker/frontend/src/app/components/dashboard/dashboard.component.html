@@ -1,0 +1,26 @@
+<div class="dashboard">
+  <h2>💰 Expense Tracker Dashboard</h2>
+  <div class="stats-grid">
+    <div class="stat-card income">
+      <h3>Total Income</h3>
+      <p>₹{{ stats.totalIncome | number:'1.2-2' }}</p>
+    </div>
+    <div class="stat-card expense">
+      <h3>Total Expense</h3>
+      <p>₹{{ stats.totalExpense | number:'1.2-2' }}</p>
+    </div>
+    <div class="stat-card balance" [class.negative]="stats.balance < 0">
+      <h3>Balance</h3>
+      <p>₹{{ stats.balance | number:'1.2-2' }}</p>
+    </div>
+    <div class="stat-card total">
+      <h3>Transactions</h3>
+      <p>{{ stats.totalTransactions }}</p>
+    </div>
+  </div>
+  <div class="quick-links">
+    <a routerLink="/add" class="btn btn-primary">+ Add Transaction</a>
+    <a routerLink="/transactions" class="btn btn-secondary">View All</a>
+    <a routerLink="/analytics" class="btn btn-info">📊 Analytics</a>
+  </div>
+</div>

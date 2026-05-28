@@ -1,0 +1,13 @@
+<div class="analytics">
+  <h2>📊 Expense Analytics</h2>
+  <div class="chart-section">
+    <h3>Expenses by Category</h3>
+    <div *ngFor="let cat of categoryKeys" class="category-bar">
+      <span class="cat-name">{{ cat }}</span>
+      <div class="bar-container">
+        <div class="bar" [style.width.%]="(categoryTotals[cat] / getTotal()) * 100"></div>
+      </div>
+      <span class="cat-amount">₹{{ categoryTotals[cat] | number:'1.2-2' }}</span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+import { Routes } from '@angular/router';
+
+export const routes: Routes = [
+  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+  { path: 'dashboard', loadComponent: () => import('./components/dashboard/dashboard.component').then(m => m.DashboardComponent) },
+  { path: 'transactions', loadComponent: () => import('./components/transaction-list/transaction-list.component').then(m => m.TransactionListComponent) },
+  { path: 'add', loadComponent: () => import('./components/transaction-form/transaction-form.component').then(m => m.TransactionFormComponent) },
+  { path: 'analytics', loadComponent: () => import('./components/analytics/analytics.component').then(m => m.AnalyticsComponent) },
+];
